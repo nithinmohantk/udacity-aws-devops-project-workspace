@@ -1,0 +1,94 @@
+[
+    {
+        "ParameterKey": "BastionAMIOS",
+        "ParameterValue": "Amazon-Linux2-HVM"
+    },
+    {
+        "ParameterKey": "AppNodeAMIOS",
+        "ParameterValue": "Ubuntu-Server-18.04-LTS-HVM"
+    },
+    {
+        "ParameterKey": "BastionHostName",
+        "ParameterValue": "LinuxBastion"
+    },
+    {
+        "ParameterKey": "BastionBanner",
+        "ParameterValue": "https://aws-quickstart.s3.us-east-1.amazonaws.com/quickstart-linux-bastion/scripts/banner_message.txt"
+    },
+    {
+        "ParameterKey": "BastionTenancy",
+        "ParameterValue": "default"
+    },
+    {
+        "ParameterKey": "BastionInstanceType",
+        "ParameterValue": "t2.small"
+    },
+    {
+        "ParameterKey": "EnableBanner",
+        "ParameterValue": "true"
+    },
+    {
+        "ParameterKey": "EnableTCPForwarding",
+        "ParameterValue": "true"
+    },
+    {
+        "ParameterKey": "EnableX11Forwarding",
+        "ParameterValue": "false"
+    },
+    {
+        "ParameterKey": "NumBastionHosts",
+        "ParameterValue": "1"
+    },
+    {
+        "ParameterKey": "RootVolumeSize",
+        "ParameterValue": "10"
+    },
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "Udagram"
+    },
+    {
+        "ParameterKey": "KeyPairName",
+        "ParameterValue": "udagram"
+    },
+    {
+        "ParameterKey": "MinAutoScalingGroupSize",
+        "ParameterValue": "2"
+    },
+    {
+        "ParameterKey": "MaxAutoScalingGroupSize",
+        "ParameterValue": "3"
+    },
+    {
+        "ParameterKey": "S3BucketUrl",
+        "ParameterValue": "s3://udagram-demo-1/udacity.zip"
+    },
+    {
+        "ParameterKey": "EbsVolumeSize",
+        "ParameterValue": "10"
+    },
+    {
+        "ParameterKey": "InstanceTypeParameter",
+        "ParameterValue": "t2.medium"
+    },
+    {
+        "ParameterKey": "VpcCIDR",
+        "ParameterValue": "10.0.0.0/16"
+    },
+    {
+        "ParameterKey": "PublicSubnet1CIDR",
+        "ParameterValue": "10.0.128.0/20"
+    },
+    {
+        "ParameterKey": "PublicSubnet2CIDR",
+        "ParameterValue": "10.0.144.0/20"
+    },
+    {
+        "ParameterKey": "PrivateSubnet1CIDR",
+        "ParameterValue": "10.0.0.0/19"
+    },
+    {
+        "ParameterKey": "PrivateSubnet2CIDR",
+        "ParameterValue": "10.0.32.0/19"
+    }
+]
