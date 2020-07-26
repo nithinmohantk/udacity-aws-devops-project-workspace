@@ -2,6 +2,7 @@ Description: >
     To create and deploy the infrastructure for udagram application in a highly available configuration
 Parameters:
 
+    # Bastion Host Instance specific
     BastionAMIOS:
         AllowedValues:
             - Ubuntu-Server-18.04-LTS-HVM
@@ -10,22 +11,8 @@ Parameters:
             - Amazon-Linux-HVM
             - RedHat-8-HVM
             - CentOS-7-HVM
-            - SUSE-SLES-15-HVM
         Default: Ubuntu-Server-18.04-LTS-HVM
         Description: The Linux distribution for the AMI to be used for the bastion instances.
-        Type: String
-
-    AppNodeAMIOS:
-        AllowedValues:
-            - Ubuntu-Server-18.04-LTS-HVM
-            - Ubuntu-Server-16.04-LTS-HVM
-            - Amazon-Linux2-HVM
-            - Amazon-Linux-HVM
-            - RedHat-8-HVM
-            - CentOS-7-HVM
-            - SUSE-SLES-15-HVM
-        Default: Ubuntu-Server-18.04-LTS-HVM
-        Description: The Linux distribution for the AMI to be used for the AppNode instances.
         Type: String
 
     BastionHostName:
@@ -88,6 +75,19 @@ Parameters:
         - '4'
         Default: '1'
         Description: The number of bastion hosts to create. The maximum number is four.
+        Type: String
+
+    # Application Instance specific
+    AppNodeAMIOS:
+        AllowedValues:
+            - Ubuntu-Server-18.04-LTS-HVM
+            - Ubuntu-Server-16.04-LTS-HVM
+            - Amazon-Linux2-HVM
+            - Amazon-Linux-HVM
+            - RedHat-8-HVM
+            - CentOS-7-HVM
+        Default: Ubuntu-Server-18.04-LTS-HVM
+        Description: The Linux distribution for the AMI to be used for the AppNode instances.
         Type: String
 
     RootVolumeSize:
@@ -175,7 +175,6 @@ Mappings:
             REDHAT8HVM: ami-08f4717d06813bf00
             CENTOS7HVM: ami-02eac2c0129f6376b
             US1604HVM: ami-008320af74136c628
-            SLES15HVM: ami-0ab507a86aac96b91
             US1804HVM: ami-089cc16f7f08c4457
         eu-west-2:
             AMZNLINUX2: ami-0b1e2eeb33ce3d66f
@@ -183,7 +182,6 @@ Mappings:
             REDHAT8HVM: ami-02f147dfb8be58a10
             CENTOS7HVM: ami-0f2b4fc905b0bd1f1
             US1604HVM: ami-0a4df59262c92cf19
-            SLES15HVM: ami-0d218397f35e41108
             US1804HVM: ami-003634241a8fcdec0
     LinuxAMINameMap:
         Amazon-Linux2-HVM:

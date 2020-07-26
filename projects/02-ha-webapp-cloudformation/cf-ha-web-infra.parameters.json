@@ -3,10 +3,7 @@
         "ParameterKey": "BastionAMIOS",
         "ParameterValue": "Amazon-Linux2-HVM"
     },
-    {
-        "ParameterKey": "AppNodeAMIOS",
-        "ParameterValue": "Ubuntu-Server-18.04-LTS-HVM"
-    },
+
     {
         "ParameterKey": "BastionHostName",
         "ParameterValue": "LinuxBastion"
@@ -38,6 +35,10 @@
     {
         "ParameterKey": "NumBastionHosts",
         "ParameterValue": "1"
+    },
+    {
+        "ParameterKey": "AppNodeAMIOS",
+        "ParameterValue": "Ubuntu-Server-18.04-LTS-HVM"
     },
     {
         "ParameterKey": "RootVolumeSize",
