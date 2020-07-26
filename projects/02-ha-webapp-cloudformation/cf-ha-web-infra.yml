@@ -170,7 +170,7 @@ Conditions:
 Mappings:
     AWSAMIRegionMap:
         eu-west-1:
-            AMZNLINUX2: ami-0c3e74fa87d2a422
+            AMZNLINUX2: ami-0c3e74fa87d2a4227
             AMZNLINUXHVM: ami-031a03cb800ecb0d5
             REDHAT8HVM: ami-08f4717d06813bf00
             CENTOS7HVM: ami-02eac2c0129f6376b

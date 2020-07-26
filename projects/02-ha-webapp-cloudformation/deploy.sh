@@ -7,29 +7,35 @@ echo '$2 = ' $2
 echo '$3 = ' $3
 echo '$4 = ' $4
 
+stackname=$2
+template=$3
+parmfile=$4
+
 create_deploy()
 {
 
  echo "-------<< CREATE DEPLOY >>--------------"
-    aws cloudformation create-stack --capabilities CAPABILITY_IAM --stack-name $2 --template-body file://$3 --parameters file://$4 --region=eu-west-1
+    aws cloudformation create-stack --capabilities CAPABILITY_IAM --stack-name $stackname --template-body file://$template --parameters file://$parmfile --region=eu-west-1
+    echo aws cloudformation create-stack --capabilities CAPABILITY_IAM --stack-name $stackname --template-body file://$template --parameters file://$parmfile --region=eu-west-1
 }
 
 
 update_deploy()
 {
   echo "-------<< UPDATE DEPLOY >>--------------"
-    aws cloudformation update-stack --capabilities CAPABILITY_IAM --stack-name $2 --template-body file://$3 --parameters file://$4 --region=eu-west-1
+    aws cloudformation update-stack --capabilities CAPABILITY_IAM --stack-name $stackname --template-body file://$template --parameters file://$parmfile --region=eu-west-1
 }
 
 
 delete_deploy()
 {
-    aws cloudformation delete-stack --capabilities CAPABILITY_IAM --stack-name $1 --region=eu-west-1
+     echo "-------<< DELETE STACK >>--------------"
+    aws cloudformation delete-stack --stack-name $stackname --region=eu-west-1
 }
 
 dummy()
 {
-     echo "dummy"
+     echo "Operation Completed! Thank you for using my Crazy Script!"
 } 
 
 while [ "$1" != "" ]; do
