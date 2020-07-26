@@ -62,7 +62,7 @@
     },
     {
         "ParameterKey": "S3BucketUrl",
-        "ParameterValue": "s3://udagram-demo-1/udacity.zip"
+        "ParameterValue": "s3://udacity-nithin-dev/udagram.zip"
     },
     {
         "ParameterKey": "EbsVolumeSize",
