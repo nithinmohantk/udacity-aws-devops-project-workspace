@@ -20,7 +20,7 @@ Go to [projects](/projects) and browse the respective "README.md" file. Follow t
 
 
 ### License 
-
+MIT License - free to reproduce without any consent.
 
 
 

@@ -7,9 +7,11 @@ This project contains the necessary scripts for automating the provisioning of s
 ### Architecture 
 
 Architecture of the solution is explained in a diagram below: 
+![arch-diagram](./arch-diagram.PNG)
 
 ### Prerequisites 
-
+as mentioned in the root README.md
+AWS CLI 
 
 ### How to Use
 
@@ -29,3 +31,18 @@ Architecture of the solution is explained in a diagram below:
 ```
 
 
+#### Results 
+Result 1:
+![Result1](./result1.PNG)
+Result 2:
+![Result2](./result2.PNG)
+Result 3:
+![Result3](./result3.PNG)
+Result 4: 
+![Result4](./result4.PNG)
+
+
+### References
+- https://aws-quickstart.s3.amazonaws.com/quickstart-linux-bastion/templates/linux-bastion.template
+- https://aws-quickstart.s3.amazonaws.com/quickstart-linux-bastion/templates/linux-bastion-master.template
+### License 
