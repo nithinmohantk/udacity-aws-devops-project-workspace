@@ -13,7 +13,11 @@ Architecture of the solution is explained in a diagram below:
 as mentioned in the root README.md
 AWS CLI 
 
+
 ### How to Use
+Solution contains two files:
+- **cf-ha-web-infra.yml** - contains the cloud formation script for creating all necessary resources 
+- **cf-ha-web-infra.parameters.json** - contains all the parameters to be passed in to CF. 
 
 #### Create 
 ```
