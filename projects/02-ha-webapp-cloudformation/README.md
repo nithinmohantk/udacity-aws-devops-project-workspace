@@ -44,9 +44,15 @@ Result 3:
 ![Result3](./result3.PNG)
 Result 4: 
 ![Result4](./result4.PNG)
+Result 5: 
+![Result5](./result5.PNG)
+Output: 
+![Output](./output.PNG)
 
+Web App URL: http://udagr-webap-1hfm3xdbhmayd-505924935.eu-west-1.elb.amazonaws.com/ 
 
 ### References
 - https://aws-quickstart.s3.amazonaws.com/quickstart-linux-bastion/templates/linux-bastion.template
 - https://aws-quickstart.s3.amazonaws.com/quickstart-linux-bastion/templates/linux-bastion-master.template
+- https://s3.amazonaws.com/cloudformation-templates-us-east-1/CloudWatch_Logs.template
 ### License 
