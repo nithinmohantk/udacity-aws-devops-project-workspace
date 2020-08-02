@@ -12,7 +12,7 @@ dockerpath=${USERNAME}/udacity-boston-housing
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login -u "${USERNAME}"
-docker tag boston-housing $dockerpath:latest
+docker tag udacity-boston-housing $dockerpath:latest
 
 # Step 3:
 # Push image to a docker repository
